@@ -3,6 +3,9 @@ import styles2 from "./style2.module.css";
 export default function Home() {
   return (
     <div>
+      <div className="card">
+        <span className="header">globals.css</span>
+      </div>
       <div
         style={{
           height: "25vh",

@@ -1,0 +1,12 @@
+.card {
+  height: 25vh;
+  width: 300px;
+  background-color: magenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: black;
+}
