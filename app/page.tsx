@@ -3,10 +3,13 @@ import styles2 from "./style2.module.css";
 export default function Home() {
   return (
     <div>
-      <div className="card">
+      {/* Global CSS */}
+      {/* <div className="card">
         <span className="header">globals.css</span>
-      </div>
-      <div
+      </div> */}
+
+      {/* Inline */}
+      {/* <div
         style={{
           height: "25vh",
           width: "300px",
@@ -17,13 +20,15 @@ export default function Home() {
         }}
       >
         <span style={{ color: "white" }}>Inline Style</span>
-      </div>
-      <div className={styles1.card}>
+      </div> */}
+
+      {/* CSS Module */}
+      {/* <div className={styles1.card}>
         <span className={styles1.header}>CSS Module 1</span>
       </div>
       <div className={styles2.card}>
         <span className={styles2.header}>CSS Module 2</span>
-      </div>
+      </div> */}
     </div>
   );
 }
