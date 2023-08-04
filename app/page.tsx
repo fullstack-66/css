@@ -12,7 +12,7 @@ export default function Home() {
   `;
 
   const Title = styled.div`
-    font-size: 1.5em;
+    font-size: 2em;
     color: #bf4f74;
   `;
 
@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <Container>
-      <Title>Hello World!</Title>
+      <Title>Styled Component</Title>
       <Button $primary>Click me</Button>
       <Button>Click me</Button>
     </Container>
