@@ -1,16 +1,21 @@
 "use client";
-import * as Popover from "@radix-ui/react-popover";
-import "./styles.css";
-const Home = () => (
-  <Popover.Root>
-    <Popover.Trigger className="PopoverTrigger">Show info</Popover.Trigger>
-    <Popover.Portal>
-      <Popover.Content className="PopoverContent">
-        Some content
-        <Popover.Arrow className="PopoverArrow" />
-      </Popover.Content>
-    </Popover.Portal>
-  </Popover.Root>
-);
+import { FC } from "react";
+import PopoverComponent from "@/components/Popover";
+import DropdownComponent from "@/components/Dropdown";
+const Home: FC = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "1rem",
+      }}
+    >
+      <PopoverComponent trigger={"Click Me"}>Some content</PopoverComponent>
+      <DropdownComponent />
+    </div>
+  );
+};
 
 export default Home;
