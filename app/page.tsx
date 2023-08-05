@@ -1,5 +1,6 @@
 "use client";
 import { FC, useState } from "react";
+import { DropZoneComponent } from "./DropZoneComponent";
 import {
   Container,
   Title,
@@ -51,7 +52,10 @@ const ModalComponent: FC<{ open: boolean; onClose: () => void }> = ({
           <Title order={1} color="blue">
             Modal Title
           </Title>
-          <Text>This is modal content.</Text>
+          <Text>
+            This is modal content.
+            {/* <DropZoneComponent /> */}
+          </Text>
           <Group position="right">
             <Button color="gray" onClick={onClose}>
               Close
