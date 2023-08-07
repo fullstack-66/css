@@ -54,7 +54,7 @@ const ModalComponent: FC<{ open: boolean; onClose: () => void }> = ({
           </Title>
           <Text>
             This is modal content.
-            {/* <DropZoneComponent /> */}
+            <DropZoneComponent />
           </Text>
           <Group position="right">
             <Button color="gray" onClick={onClose}>
